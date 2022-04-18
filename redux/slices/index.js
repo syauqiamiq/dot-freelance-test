@@ -1,2 +1,2 @@
-import fareReducer from './fareSlice';
-export { fareReducer };
+import coinReducer from './coinSlice';
+export { coinReducer };

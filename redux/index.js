@@ -1,8 +1,8 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import { fareReducer } from './slices';
+import { coinReducer } from './slices';
 
 const rootReducer = combineReducers({
-  fareReducers: fareReducer,
+  coinReducers: coinReducer,
 });
 
 export default rootReducer;

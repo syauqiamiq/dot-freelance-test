@@ -1,0 +1,12 @@
+.cardWrapper {
+  margin-block: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #2e2e2e;
+  color: #ffac37;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Verdana, sans-serif;
+}

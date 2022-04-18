@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #030303;
+}
+
+.navbarBrand {
+  color: #ffb854 !important;
+  font-size: 30px;
+  font-weight: 600;
+}
+.navLink {
+  color: white !important;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none !important;
+  margin-right: 20px;
+}
+.navLink:hover {
+  color: white !important;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none !important;
+  margin-right: 20px;
+}
+
+.btnLogin {
+  color: black !important;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ffb854 !important;
+  border: none;
+  padding: 5px;
+  min-width: 100px;
+}
+
+.btnLogin:hover {
+  color: black !important;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffac37 !important;
+  border: none;
+  padding: 5px;
+  min-width: 100px;
+}

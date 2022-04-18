@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import { Col, Container, Row } from 'react-bootstrap';
-import { FormComponent } from '../components';
+import { Carousel, Col, Container, Image, Row } from 'react-bootstrap';
+import { CarouselComponent, DescriptionComponent, ListCategoryComponent, TitleComponent } from '../components';
+
 import Template from '../template/Template';
 
 export default function Home() {
@@ -12,13 +13,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Template>
+        <CarouselComponent />
+        <section className="mb-3 mt-3">
+          <Container>
+            <TitleComponent title="Top Cryptocurrency Categories By Market Capitalization" />
+            <DescriptionComponent desc="The cryptocurrency category ranking is based on market capitalization." />
+            <DescriptionComponent desc="Note: Some cryptocurrencies may overlap across several categories" />
+          </Container>
+        </section>
         <Row>
           <Col>
             <Container>
-              <FormComponent />
+              <ListCategoryComponent />
             </Container>
           </Col>
-          <Col>Kanan</Col>
         </Row>
       </Template>
     </div>

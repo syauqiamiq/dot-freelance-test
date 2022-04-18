@@ -5,4 +5,6 @@ import CarouselComponent from './CarouselComponent/CarouselComponent';
 import CardComponent from './CardComponent/CardComponent';
 import TitleComponent from './TitleComponent/TitleComponent';
 import DescriptionComponent from './DescriptionComponent/DescriptionComponent';
-export { NavbarComponent, FooterComponent, ListCategoryComponent, CarouselComponent, CardComponent, TitleComponent, DescriptionComponent };
+import PaperComponent from './PaperComponent/PaperComponent';
+import AuthFormComponent from './AuthFormComponent/AuthFormComponent';
+export { AuthFormComponent, PaperComponent, NavbarComponent, FooterComponent, ListCategoryComponent, CarouselComponent, CardComponent, TitleComponent, DescriptionComponent };

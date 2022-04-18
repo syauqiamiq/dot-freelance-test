@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Col, Container, Row } from 'react-bootstrap';
-import { DescriptionComponent, TitleComponent } from '../components';
+import { DescriptionComponent, PaperComponent, TitleComponent } from '../components';
 import Template from '../template/Template';
 const login = () => {
   return (
@@ -17,6 +17,11 @@ const login = () => {
             <Row>
               <Col md={6}>
                 <DescriptionComponent desc="Sign In to unlock many feature and enjoy the cryptocurrency website with many feature to help you manage your crypto assets and analyze the market." />
+              </Col>
+            </Row>
+            <Row>
+              <Col className="d-flex justify-content-center mt-4 mb-4">
+                <PaperComponent />
               </Col>
             </Row>
           </Container>

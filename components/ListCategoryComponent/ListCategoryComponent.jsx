@@ -3,6 +3,7 @@ import { Card, Col, Row, Spinner } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCoinCategories } from '../../redux/slices/coinSlice';
 import CardComponent from '../CardComponent/CardComponent';
+import TableComponent from '../TableComponent/TableComponent';
 
 import styles from './listCategory.module.css';
 
@@ -17,7 +18,7 @@ const ListCategoryComponent = () => {
   return (
     <div>
       <div className={styles.cardWrapper}>
-        <Card className={styles.card}>
+        {/* <Card className={styles.card}>
           <Card.Body>
             <Row>
               <Col>#</Col>
@@ -27,17 +28,18 @@ const ListCategoryComponent = () => {
               <Col>24h Volume</Col>
             </Row>
           </Card.Body>
-        </Card>
+        </Card> */}
       </div>
       {coinLoading ? (
         <div className="d-flex justify-content-center">
           <Spinner animation="grow" variant="danger" className={styles.spinner} />
         </div>
       ) : coinCategoryData ? (
-        coinCategoryData.slice(0, 10).map((data, index) => {
-          return <CardComponent index={index} data={data} />;
-        })
+        <TableComponent data={coinCategoryData.slice(0, 10)} />
       ) : (
+        // coinCategoryData.slice(0, 10).map((data, index) => {
+        //   return <CardComponent index={index} data={data} />;
+        // })
         <p>{errorCoinCategory ? errorCoinCategory : 'DATA KOSONG'}</p>
       )}
     </div>

@@ -8,12 +8,20 @@
   font-weight: 800;
   font-family: Verdana, sans-serif;
 }
+
+@media (min-width: 1199.98px) {
+  .linkWrapper {
+    display: flex;
+    justify-content: end;
+  }
+}
 .navLink {
   color: white !important;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none !important;
   margin-right: 40px;
+  cursor: pointer;
 }
 .navLink:hover {
   font-weight: 700;
@@ -37,4 +45,16 @@
   border: none;
   padding: 5px;
   min-width: 100px;
+}
+
+.dropdown {
+  color: white !important;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none !important;
+  margin-right: 40px;
+  background-color: transparent !important;
+}
+.dropdown:hover {
+  font-weight: 700;
 }

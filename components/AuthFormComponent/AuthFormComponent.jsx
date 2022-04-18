@@ -1,17 +1,20 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { Alert, Button, Card, Form } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
+import { AuthSuccess } from '../../redux/slices/authSlice';
 import styles from './form.module.css';
 const AuthFormComponent = ({ isRegisterForm }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
-
+  const dispatch = useDispatch();
   const router = useRouter();
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email == 'admin@admin.com' && password == 'admin') {
       localStorage.setItem('isAuth', true);
+      dispatch(AuthSuccess());
       router.push('/');
     } else {
       setError(true);

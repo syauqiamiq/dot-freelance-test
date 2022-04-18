@@ -1,8 +1,9 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import { coinReducer } from './slices';
+import { authReducer, coinReducer } from './slices';
 
 const rootReducer = combineReducers({
   coinReducers: coinReducer,
+  authReducers: authReducer,
 });
 
 export default rootReducer;

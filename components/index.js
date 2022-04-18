@@ -7,4 +7,5 @@ import TitleComponent from './TitleComponent/TitleComponent';
 import DescriptionComponent from './DescriptionComponent/DescriptionComponent';
 import PaperComponent from './PaperComponent/PaperComponent';
 import AuthFormComponent from './AuthFormComponent/AuthFormComponent';
-export { AuthFormComponent, PaperComponent, NavbarComponent, FooterComponent, ListCategoryComponent, CarouselComponent, CardComponent, TitleComponent, DescriptionComponent };
+import TableComponent from './TableComponent/TableComponent';
+export { TableComponent, AuthFormComponent, PaperComponent, NavbarComponent, FooterComponent, ListCategoryComponent, CarouselComponent, CardComponent, TitleComponent, DescriptionComponent };

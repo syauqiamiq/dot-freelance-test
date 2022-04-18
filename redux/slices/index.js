@@ -1,2 +1,3 @@
 import coinReducer from './coinSlice';
-export { coinReducer };
+import authReducer from './authSlice';
+export { coinReducer, authReducer };

@@ -1,8 +1,8 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import { questionReducers } from './slices';
+import { fareReducer } from './slices';
 
 const rootReducer = combineReducers({
-  questionReducers: questionReducers,
+  fareReducers: fareReducer,
 });
 
 export default rootReducer;

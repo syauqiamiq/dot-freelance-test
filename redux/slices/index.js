@@ -1,2 +1,2 @@
-import questionReducers from './questionSlice';
-export { questionReducers };
+import fareReducer from './fareSlice';
+export { fareReducer };

@@ -13,7 +13,7 @@ const NavbarComponent = () => {
             <Nav.Link href="/" className={styles.navLink}>
               Home
             </Nav.Link>
-            <Nav.Link href="/" className={styles.navLink}>
+            <Nav.Link href="/login" className={styles.navLink}>
               Sign In
             </Nav.Link>
             <Button className={styles.btnLogin}>Sign Up</Button>

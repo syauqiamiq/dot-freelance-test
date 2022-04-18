@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row, Spinner } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCoinCategories } from '../../redux/slices/coinSlice';
 import CardComponent from '../CardComponent/CardComponent';
@@ -30,7 +30,9 @@ const ListCategoryComponent = () => {
         </Card>
       </div>
       {coinLoading ? (
-        <p>Loading Data...</p>
+        <div className="d-flex justify-content-center">
+          <Spinner animation="grow" variant="danger" className={styles.spinner} />
+        </div>
       ) : coinCategoryData ? (
         coinCategoryData.slice(0, 10).map((data, index) => {
           return <CardComponent index={index} data={data} />;

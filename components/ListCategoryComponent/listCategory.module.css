@@ -10,3 +10,10 @@
   font-weight: 400;
   font-family: Verdana, sans-serif;
 }
+
+.spinner {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: #ffac37;
+}

@@ -1,3 +1,4 @@
+import { formatCurrency } from '@coingecko/cryptoformat';
 import Image from 'next/image';
 import { Card, Col, NavItem, Row } from 'react-bootstrap';
 
@@ -21,8 +22,8 @@ const CardComponent = ({ index, data }) => {
                 );
               })}
             </Col>
-            <Col>{data.market_cap}</Col>
-            <Col>{data.volume_24h}</Col>
+            <Col>{formatCurrency(data.market_cap, 'USD', 'en', false, { decimalPlaces: 0 })}</Col>
+            <Col>{formatCurrency(data.volume_24h, 'USD', 'en', false, { decimalPlaces: 0 })}</Col>
           </Row>
         </Card.Body>
       </Card>

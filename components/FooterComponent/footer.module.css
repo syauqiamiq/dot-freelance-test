@@ -1,0 +1,13 @@
+.footerBg {
+  margin-top: 50px;
+  min-height: 50px;
+  display: flex;
+  background-color: #2e2e2e;
+  justify-content: center;
+}
+.footerContent {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffb854;
+  margin-top: 10px;
+}

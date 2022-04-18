@@ -10,12 +10,12 @@ const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="d-flex justify-content-end" id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="/" className={styles.navLink}>
-              Home
-            </Nav.Link>
-            <Nav.Link href="/login" className={styles.navLink}>
-              Sign In
-            </Nav.Link>
+            <Link href="/">
+              <a className={styles.navLink}> Home</a>
+            </Link>
+            <Link href="/login">
+              <a className={styles.navLink}>Sign In</a>
+            </Link>
             <Button className={styles.btnLogin}>Sign Up</Button>
           </Nav>
         </Navbar.Collapse>

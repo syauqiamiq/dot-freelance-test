@@ -4,8 +4,7 @@ Project yang dibuat untuk memenuhi tes rekrutment freelance pada posisi Frontend
 Node >=6.9.0
 
 ### Frameworks and Library
-React
-Next.js
+React dan Next.js
 
 ### Public External API
  ```https://api.coingecko.com/api/v3/coins/categories```
@@ -19,6 +18,6 @@ npm run dev
 yarn dev
 ```
 
-Buka ```localhost:3000```
+Buka ```localhost:3000``` pada browser
 
 

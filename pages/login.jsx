@@ -1,8 +1,15 @@
 import Head from 'next/head';
-import { Col, Container, Row } from 'react-bootstrap';
-import { DescriptionComponent, PaperComponent, TitleComponent } from '../components';
+import { useEffect, useState } from 'react';
+import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import { AuthFormComponent, DescriptionComponent, PaperComponent, TitleComponent } from '../components';
 import Template from '../template/Template';
 const login = () => {
+  const [status, setStatus] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setStatus(true);
+    }, 3000);
+  }, [status]);
   return (
     <div>
       <Head>
@@ -21,7 +28,14 @@ const login = () => {
             </Row>
             <Row>
               <Col className="d-flex justify-content-center mt-4 mb-4">
-                <PaperComponent />
+                <PaperComponent>
+                  <TitleComponent title="Secure Login With Us" />
+                  <DescriptionComponent desc="Your data is encrypted securely on server" />
+                  <AuthFormComponent isRegisterForm={false} />
+                  <Row className="mt-5">
+                    <Col className="d-flex justify-content-center">{status ? <TitleComponent title="SERVER STATUS OK !" /> : <Spinner animation="grow" variant="danger" className="spinner" />}</Col>
+                  </Row>
+                </PaperComponent>
               </Col>
             </Row>
           </Container>

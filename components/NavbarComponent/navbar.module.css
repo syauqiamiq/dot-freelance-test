@@ -12,7 +12,7 @@
 @media (min-width: 1199.98px) {
   .linkWrapper {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 .navLink {

@@ -1,12 +1,10 @@
 import { Card } from 'react-bootstrap';
 import AuthFormComponent from '../AuthFormComponent/AuthFormComponent';
 import styles from './paper.module.css';
-const PaperComponent = () => {
+const PaperComponent = ({ children }) => {
   return (
     <Card className={styles.paper}>
-      <Card.Body>
-        <AuthFormComponent />{' '}
-      </Card.Body>
+      <Card.Body>{children}</Card.Body>
     </Card>
   );
 };

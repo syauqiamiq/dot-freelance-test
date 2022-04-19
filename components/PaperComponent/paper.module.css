@@ -1,6 +1,6 @@
 .paper {
-  min-width: 70rem;
-  min-height: 40rem;
+  width: 70rem;
+  height: 40rem;
   border-radius: 10px;
   background-color: #2e2e2e;
   margin-top: 20px;

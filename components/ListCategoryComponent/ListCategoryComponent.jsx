@@ -32,7 +32,7 @@ const ListCategoryComponent = () => {
       </div>
       {coinLoading ? (
         <div className="d-flex justify-content-center">
-          <Spinner animation="grow" variant="danger" className={styles.spinner} />
+          <Spinner animation="grow" variant="danger" className="spinner" />
         </div>
       ) : coinCategoryData ? (
         <TableComponent data={coinCategoryData.slice(0, 10)} />

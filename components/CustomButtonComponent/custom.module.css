@@ -1,0 +1,19 @@
+.btn {
+  color: black !important;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ffb854 !important;
+  border: none;
+  padding: 5px;
+  min-width: 100px;
+}
+
+.btn:hover {
+  color: black !important;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffac37 !important;
+  border: none;
+  padding: 5px;
+  min-width: 100px;
+}

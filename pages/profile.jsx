@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { DescriptionComponent, PaperComponent, TitleComponent } from '../components';
+import { DescriptionComponent, TitleComponent } from '../components';
 import { AuthSuccess } from '../redux/slices/authSlice';
 import Template from '../template/Template';
 const profile = () => {

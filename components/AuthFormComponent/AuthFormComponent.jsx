@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Alert, Button, Card, Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { AuthSuccess } from '../../redux/slices/authSlice';
+import CustomButtonComponent from '../CustomButtonComponent/CustomButtonComponent';
 import styles from './form.module.css';
 const AuthFormComponent = ({ isRegisterForm }) => {
   const [email, setEmail] = useState('');
@@ -24,7 +25,7 @@ const AuthFormComponent = ({ isRegisterForm }) => {
     }
   };
   return (
-    <div>
+    <div className="mt-3">
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label className={styles.formLabel}>Email address</Form.Label>
@@ -43,9 +44,7 @@ const AuthFormComponent = ({ isRegisterForm }) => {
         ) : (
           ''
         )}
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
+        <CustomButtonComponent title="Submit" type="submit" />
       </Form>
     </div>
   );

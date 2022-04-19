@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Button, Container, Dropdown, DropdownButton, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { AuthLogout, AuthSuccess } from '../../redux/slices/authSlice';
+import CustomButtonComponent from '../CustomButtonComponent/CustomButtonComponent';
 import styles from './navbar.module.css';
 
 const NavbarComponent = () => {
@@ -43,7 +44,7 @@ const NavbarComponent = () => {
                   <Link href="/login">
                     <a className={styles.navLink}>Sign In</a>
                   </Link>
-                  <Button className={styles.btnLogin}>Sign Up</Button>
+                  <CustomButtonComponent title="Sign Up" type="button" />
                 </>
               )}
             </Nav>

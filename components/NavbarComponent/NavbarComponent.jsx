@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { Button, Container, Dropdown, DropdownButton, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { useEffect } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { AuthLogout, AuthSuccess } from '../../redux/slices/authSlice';
 import CustomButtonComponent from '../CustomButtonComponent/CustomButtonComponent';

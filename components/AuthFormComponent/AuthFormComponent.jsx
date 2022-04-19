@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import { Alert, Button, Card, Form } from 'react-bootstrap';
+import { Alert, Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { AuthSuccess } from '../../redux/slices/authSlice';
 import CustomButtonComponent from '../CustomButtonComponent/CustomButtonComponent';

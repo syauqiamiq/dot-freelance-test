@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { GET_CRYPTO_CATEGORY_URL, LOCAL_GET_CITY_URL, LOCAL_GET_PROVINCE_URL, LOCAL_POST_COST_URL } from '../../helper/api';
+import { GET_CRYPTO_CATEGORY_URL } from '../../helper/api';
 
 const initialState = {
   coinLoading: false,
